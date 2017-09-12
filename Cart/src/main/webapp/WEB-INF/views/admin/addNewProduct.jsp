@@ -37,6 +37,8 @@
 	<%-- 	Images:<form:input path="pimages"/><form:errors path="pimages" cssStyle="color: #ff0000;"/> <br /> --%>
 		Publish: <form:input path="publish"/><form:errors path="publish" cssStyle="color: #ff0000;"/> <br />
 		
+		<input type="hidden"  name="${_csrf.parameterName}"   value="${_csrf.token}"/>
+		
 		<input type="submit" value="Add">
 		
 	
